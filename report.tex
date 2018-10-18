@@ -1,0 +1,54 @@
+\documentclass[12pt, titlepage]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{amsmath}
+\usepackage [backend=biber, citestyle=ieee]{biblatex}
+\addbibresource{refs.bib}
+
+\begin{document}
+
+\title{TITLE}
+\author{AUTHOR}
+
+\maketitle
+
+\section{Introduction}
+\subsection{SUBSECTION}
+\newpage
+\section{Design Plan}
+\begin{figure}[tbh!]
+	\includegraphics[scale=.6,trim={0 8cm 0 8cm},clip]{Filename.png}
+	\caption{CAPTION}
+	\label{fig:LABEL}
+\end{figure}
+See Figure \ref{fig:LABEL}
+Cited Text\cite{citation}. 
+\section{Implementation}
+\section{Analysis}
+\begin{equation} 
+	MATH
+	\label{LABEL}
+\end{equation}
+See Equation \ref{LABEL}.
+
+\begin{table}[tbh!]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		value&value&value\\
+		\hline
+		value&value&value\\
+		\hline
+	\end{tabular}
+	\caption{CAPTION}
+	\label{LABEL}
+\end{table}
+\section{Conclusions}
+\subsection{Failures and Adjustments}
+\subsection{Future Work}
+\newpage
+\section{}
+\printbibliography
+\newpage
+\end{document}
