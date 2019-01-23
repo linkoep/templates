@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{TITLE}
+\author{AUTHOR}
+
+\maketitle
+
+\section{Objective}
+\section{List of Equipment}
+\begin{table}[tbh!]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Equipment&Model&Serial Number&Calibration Date\\
+		\hline
+		value&value&value&value\\
+		\hline
+	\end{tabular}
+	\caption{List of Equipment}
+	\label{equipList}
+\end{table}
+\section{Procedure}
+\begin{enumerate}
+	\item
+\end{enumerate}
+\section{Analysis}
+\begin{figure}[tbh!]
+	\includegraphics[scale=.6,trim={0 8cm 0 8cm},clip]{Filename.png}
+	\caption{CAPTION}
+	\label{fig:LABEL}
+\end{figure}
+See Figure \ref{fig:LABEL}
+\begin{equation} 
+	MATH
+	\label{LABEL}
+\end{equation}
+See Equation \ref{LABEL}.
+
+\section{Conclusions}
+\section{Recommendations}
+\end{document}
