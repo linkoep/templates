@@ -1,8 +1,10 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[section]{placeins}
 \usepackage{amsmath}
+\usepackage{pdfpages}
 
 \begin{document}
 
@@ -44,4 +46,6 @@ See Equation \ref{LABEL}.
 
 \section{Conclusions}
 \section{Recommendations}
+\appendix
+\includepdf[pages={1-}]{filename.pdf}
 \end{document}
